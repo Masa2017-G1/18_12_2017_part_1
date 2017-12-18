@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sheygam.masa_2017_18_12.MainActivity">
+
+    <!--<fragment-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="32dp"-->
+        <!--android:id="@+id/my_fragment"-->
+        <!--android:name="com.sheygam.masa_2017_18_12.MyFragment"-->
+        <!--tools:layout="@layout/my_fragment_layout"/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add fragment"
+        android:id="@+id/add_fragment_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replace"
+        android:id="@+id/replace_fragment_btn"
+        android:layout_toEndOf="@id/add_fragment_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:id="@+id/remove_fragment_btn"
+        android:layout_toEndOf="@id/replace_fragment_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dettach"
+        android:id="@+id/dettach_fragment_btn"
+        android:layout_below="@id/add_fragment_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attach"
+        android:layout_below="@id/add_fragment_btn"
+        android:layout_toEndOf="@id/dettach_fragment_btn"
+        android:id="@+id/attach_fragment_btn"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        android:id="@+id/fragment_container"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_below="@id/dettach_fragment_btn"
+        android:id="@+id/back_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop to remove"
+        android:layout_below="@id/dettach_fragment_btn"
+        android:layout_toEndOf="@id/back_btn"
+        android:id="@+id/pop_to_remove_btn"/>
+</RelativeLayout>
